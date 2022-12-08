@@ -66,7 +66,7 @@
 					{new Date(timestamp * 1000).toLocaleTimeString('it-IT', {
 						hour: '2-digit',
 						minute: '2-digit'
-					})}<br /><span class="font-light text-xl italic">Orario</span>
+					})}<br /><span class="font-light text-xl italic">Time</span>
 				</h1>
 			</div>
 			<div class="mb-5">

@@ -96,7 +96,7 @@ Visit http://localhost:4173 to see the webapp
 
 ### Mobile
 
-fig. 5 - Dasboard Mobile view | fig . 6 - User List Mobile View
+fig. 5 - Dasboard Mobile view | fig. 6 - User List Mobile View
 --- | ---
 ![MobileMainDashboard](https://i.imgur.com/3aVcxN1.png) | ![MobileUserList](https://i.imgur.com/1EZaTln.png)
 

@@ -8,7 +8,7 @@
 	export let timestamp;
 
 	const convertDate = (time) => {
-		return new Date(time * 1000).toLocaleDateString('it-IT', {
+		return new Date(time * 1000).toLocaleDateString('en-US', {
 			year: 'numeric',
 			month: 'short',
 			day: 'numeric',
