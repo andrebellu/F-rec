@@ -15,5 +15,3 @@
 		</div>
 	{/if}
 </main>
-
-<!--Bacca scimmia vai nella cartella components e in NavBar.svelte trovi il codice che hai fatto, continua da lì-->

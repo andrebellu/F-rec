@@ -5,6 +5,9 @@ export async function POST({ locals, request }) {
 	if (!locals.user) {
 		return new Response('Unauthorized', { status: 403 });
 	}
+    if(locals.user.username !== 'admin') {
+        return new Response('Unauthorized', { status: 403 });
+    }
 
 	const id = await request.json();
 	await users.deleteOne({ _id: ObjectId(id) });

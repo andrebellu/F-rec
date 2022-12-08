@@ -14,7 +14,11 @@
 	}
 	async function handleMessage(event) {
 		const del_id = event.detail._id;
-		const a = await fetch('/api/deleteUser', { method: 'POST', body: JSON.stringify(del_id) });
+		const res = await fetch('/api/deleteUser', { method: 'POST', body: JSON.stringify(del_id) });
+        if(res.status === 403) {
+            alert("You don't have permission to delete this user");
+            return;
+        }
 		invalidate('app:employees');
 	}
 

@@ -36,7 +36,7 @@
 				alert(message);
 			}
 		} else {
-			alert("Errore nell'aggiunta dell'utente");
+			alert("Error adding employee. Please try again later.");
 		}
 	}
 	let modalOpen = false;
