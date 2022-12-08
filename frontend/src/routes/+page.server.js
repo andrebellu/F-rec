@@ -1,5 +1,5 @@
-import { redirect } from "@sveltejs/kit"
+import { redirect } from '@sveltejs/kit';
 
-export async function load({locals}) {
-        throw redirect(302, '/dashboard')
+export async function load({ locals }) {
+	throw redirect(302, '/dashboard');
 }

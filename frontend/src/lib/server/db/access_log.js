@@ -1,3 +1,3 @@
-import db from "$lib/server/db/mongo"
+import db from '$lib/server/db/mongo';
 
-export const access_log = db.collection("access_log")
+export const access_log = db.collection('access_log');

@@ -1,3 +1,3 @@
-import db from "$lib/server/db/mongo"
+import db from '$lib/server/db/mongo';
 
-export const users = db.collection("users")
+export const users = db.collection('users');

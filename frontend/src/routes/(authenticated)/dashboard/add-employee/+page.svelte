@@ -25,21 +25,19 @@
 		const res = await fetch('', {
 			method: 'POST',
 			body: formData
-		})
-        if (res.status == 200) {
-            const data = await res.json()
-            if(data.type == 'success'){
-                window.location.href = '/dashboard/employees';
-                return
-            }else{
-                const message = JSON.parse(data.data)[1]
-                alert(message)
-            }
-
-        } else {
-            alert("Errore nell'aggiunta dell'utente");
-        }
-	
+		});
+		if (res.status == 200) {
+			const data = await res.json();
+			if (data.type == 'success') {
+				window.location.href = '/dashboard/employees';
+				return;
+			} else {
+				const message = JSON.parse(data.data)[1];
+				alert(message);
+			}
+		} else {
+			alert("Errore nell'aggiunta dell'utente");
+		}
 	}
 	let modalOpen = false;
 

@@ -1,3 +1,3 @@
-import db from "$lib/server/db/mongo"
+import db from '$lib/server/db/mongo';
 
-export const auth = db.collection("auth")
+export const auth = db.collection('auth');
