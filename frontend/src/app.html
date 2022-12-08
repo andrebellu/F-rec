@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	%sveltekit.head%
+</head>
+
+<script>
+    const addVh = () => {
+        document.querySelector(':root').style
+        .setProperty('--vh', window.innerHeight/100 + 'px');
+    }
+    window.addEventListener('load', addVh)
+    window.addEventListener('resize', addVh)
+</script>
+
+<body class="overflow-hidden bg-bg-grey select-none">
+    <div style="display: contents">
+        %sveltekit.body%
+    </div>
+</body>
+
+</html>

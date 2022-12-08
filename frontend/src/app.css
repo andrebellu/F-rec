@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "sidebar content";
+}
+
+.dashboard-grid {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: max-content 2fr max-content; 
+    grid-template-areas: 
+      "dashboard ."
+      "access-log info-card"
+      "access-log number"; 
+}
+
+@media (max-width: 860px) {
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        grid-template-areas: 
+        "dashboard"
+        "access-log"
+    }
+    .layout-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr max-content;
+        grid-template-areas: 
+        "content"
+        "sidebar";
+    }
+    
+}
+
+@layer components {
+  .input-field {
+    @apply rounded-2xl px-5 py-2;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

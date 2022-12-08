@@ -1,0 +1,4 @@
+face-recognition
+opencv-python
+pymongo[srv]
+python-dotenv
