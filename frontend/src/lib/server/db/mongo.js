@@ -8,4 +8,4 @@ export async function start_mongo() {
 	return await client.connect();
 }
 
-export default client.db('tbd');
+export default client.db('db');
