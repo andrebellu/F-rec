@@ -27,25 +27,24 @@ source .venv/bin/activate
 After that you need to check if you have the following libraries installed:
 
 - Cmake
-- Dlib
+- Visual Studio for C++ (if on windows)
 
-You probably have them installed if you have installed Visual Studio.
-
-If you don't have them installed, you need to install them. To do that, you need to run the following commands:
+If you don't have cmake installed, run the following command:
 
 ```shell
-pip install cmake pip install dlib
+pip install cmake
 ```
 
-```shell
-pip install dlib
-```
-
-Then, you need to install the following python libraries; in order to do that, you need to run the following commands:
+Then, you need to install the following python libraries; in order to do that, you need to run the following command:
 
 ```shell
 pip install -r requirements.txt
 ```
+
+Now populate the .env file with the following variables:
+MONGODB_URI=your_mongodb_uri
+
+Replace your_mongodb_uri with the uri of your MongoDB database.
 
 After that, you need to run the following command to run the script:
 
@@ -53,4 +52,4 @@ After that, you need to run the following command to run the script:
 python main.py
 ```
 
-You'll be recognized by the camera only if you have added yourself to the employers from the [webapp](https://f-rec.mattia.click/login). If you haven't added yourself, you'll be recognized as an unknown person.
+You'll be recognized by the camera only if you have added yourself to the employees from the web app, follow the instructions in the frontend directory to host it. If you haven't added yourself, you'll be recognized as an unknown person.

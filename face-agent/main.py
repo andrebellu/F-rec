@@ -10,10 +10,10 @@ from pymongo import MongoClient
 
 load_dotenv()
 
-CONNECTION_STRING = os.environ["CONNECTION_STRING"]
+CONNECTION_STRING = os.environ["MONGODB_URI"]
 client = MongoClient(CONNECTION_STRING)
 
-db = client.tbd
+db = client.db
 users_collection = db["users"]
 access_log_collection = db["access_log"]
 
