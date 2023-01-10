@@ -29,7 +29,7 @@
 	"dependencies": {
 		"daisyui": "^2.42.1",
 		"dotenv": "^16.0.3",
-		"jsonwebtoken": "^8.5.1",
+		"jsonwebtoken": "^9.0.0",
 		"mongodb": "^4.12.1"
 	}
 }
